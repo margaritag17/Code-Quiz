@@ -3,13 +3,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+
+  
+
+    <div class="jumbotron jumbotron-fluid" id="home">
+        <div class="container">
+          <h1 class="display-4">Coding Quiz Challenge</h1>
+          <p class="lead">Answer the multiple choice questions.</p>
+          <button type="button" id="startBtn" class="btn btn-info btn-lg">START</button>
+        </div>
+      </div>
+
+      <header>
+        <span id="timer" class="float-right mr-2">Time: 0</span>
+    </header>
+
+      
+    <div class="container mt-5 d-none" id="quiz">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8" id="QA-block">
+                <h3 id="questions" class="mb-4">QUESTION</h3>
+                <ul id="answers" class="list-unstyled">
+                    <li class="answerChoice">A) </li>
+                    <li class="answerChoice">B) </li>
+                    <li class="answerChoice">C) </li>
+                    <li class="answerChoice">D) </li>
+                </ul>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container mt-5 d-none">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8">
+                <h2>All Done!</h2>
+                
+                <form class="form-group">
+                    <label for="new-score">Enter your name: </label>
+                    <input type="text" id="userName"> 
+                    <button type="button" class="btn btn-info btn-sm submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+
+
+
+      
+
     
 
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="question.js"></script>
+      <script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
